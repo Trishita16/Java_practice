@@ -1,0 +1,34 @@
+class Emoloyee{
+    String name,designation;
+    int impid;
+    double salary;
+
+    Emoloyee()
+    {
+        this.name="Arun";
+        this.impid="1001";
+        this.salary="5000";
+        this.designation="Data Analist";
+    }
+    Emoloyee(String name,String designation,int empid,double salary)
+    {
+        this.name=name;
+        this.empid=empid;
+        this.salary=salary;
+        this.designation=designation;
+    }
+    void display()
+    {
+        System.out.println("Name"+name);
+        System.out.println("Empid"+epmid);
+        System.out.println("Salary"+salary);
+        System.out.println("DEsignation"+designation);
+    }
+     public static void main(String[] args) {
+        Emoloyee a1=new Emoloyee();
+        Emoloyee a2=new Emoloyee("Sagnik",102,800,"Clark");
+        a1.display();
+        a2.display();
+        
+    }
+}
